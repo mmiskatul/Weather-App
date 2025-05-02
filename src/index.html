@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Weather App</title>
 </head>
 <body class="bg-[#222] m-0 p-0 ">
-        <div class="search">
-            <input class="bg-white" type="text" placeholder="Enter City name " spellcheck="false">
-            <button><img src="./images/search.png" alt=""></button>
+        <div id="Card" class="w-[90%] max-w-[470px] bg-gradient-to-br from-[#00feba] to-[#5b548a] text-white mx-auto mt-[100px] rounded-2xl p-12 text-center items-center  ">
+            <div id="search" class="w-full flex items-center justify-between ">
+                <input class="bg-white border-0 outline-0  text-gray-600 px-3 py-5 rounded-4xl flex-1 mr-4 text-xl " type="text" placeholder="Enter City name " spellcheck="false">
+                <button class=" border-0 outline-0 text-4xl text-gray-300 rounded-full hover:cursor-pointer hover: "><i class="fa-solid fa-magnifying-glass hover:"></i></button>
+            </div>
+            <div id="weather" class=" items-center  justify-center">
+                <img class="w-40 mt-8 items-center " src="images/rain.png" alt="">
+                <h1 id="temp" class="text-7xl font-medium mt-5"><span>22</span> °C</h1>
+                <h2 id="city" class=" text-4xl font-normal mt-5">Dhaka</h2>
+                <div class=" details flex gap-16 items-center justify-between py-5 mt-12">
+                    <div class="col flex items-center text-left">
+                        <img class="w-10 mr-2.5" src="images/humidity.png" alt="">
+                        <div class="  text-xl mt-[-6px]">
+                            <p class="">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col flex items-center text-left">
+                        <img class="w-10 mr-2.5" src="images/wind.png" alt="">
+                        <div class="text-xl mt-[-6px]">
+                            <p class="">15 km/h</p>
+                            <p>Wind Speed </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 </body>
 </html>
